@@ -16,6 +16,10 @@ body {
   font-family: "Inter Extra Bold", sans-serif;
 }
 
+.logo {
+  width: 40px;
+}
+
 header {
   background-color: #fff;
   padding: 25px 60px;
