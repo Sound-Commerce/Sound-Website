@@ -3,20 +3,95 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test Page</title>
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        text-align: center;
-        margin: 50px;
-      }
-      h1 {
-        color: #333;
-      }
-    </style>
+    <title>Consultancy Website</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Welcome to the Test Page</h1>
-    <p>This is a simple HTML page for testing purposes.</p>
+    <!-- HEADER + NAVIGATION SECTION -->
+    <header>
+      <div class="header-container">
+        <h2 class="colorSecondary interExtraBold trackingTight">
+          Sound Commerce<span class="colorPrimaryAlt">.</span>
+        </h2>
+        <nav class="header-nav">
+          <ul>
+            <li class="interExtraBold"><a href="/home">Home</a></li>
+            <li class="interExtraBold"><a href="/about">About Us</a></li>
+            <li class="interExtraBold"><a href="/services">Services</a></li>
+            <li class="interExtraBold"><a href="/contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section class="hero bgSecondary colorWhite">
+      <h1 class="interExtraBold trackingTight">
+        Sound Commerce<span class="colorPrimaryAlt">.</span> <br />A
+        full-service global <br />payments consultancy<span
+          class="colorPrimaryAlt"
+          >.</span
+        >
+      </h1>
+      <div class="logo">
+        <img src="images/logo-green.svg" alt="Description of image" />
+      </div>
+    </section>
+
+    <!-- SERVICE #1 SECTION -->
+    <section class="hero bgWhite">
+      <div>
+        <h2 class="colorSecondary marginBottom60 interExtraBold trackingTight">
+          Who we are.
+        </h2>
+        <h1>
+          <span class="colorPrimaryAlt">Sound Commerce.</span><br />A
+          full-service global <br />payments consultancy.
+        </h1>
+      </div>
+      <p>icon</p>
+    </section>
+
+    <!-- SERVICE #1 SECTION -->
+    <section class="hero bgSecondary colorPrimary">
+      <div>
+        <h2 class="marginBottom60 interExtraBold">Who we are.</h2>
+        <h1>
+          Sound Commerce. <br />A full-service global <br />payments
+          consultancy.
+        </h1>
+      </div>
+      <p>icon</p>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-logo">
+          <div class="logo">
+            <img src="images/logo-green.svg" alt="Description of image" />
+          </div>
+        </div>
+        <div class="footer-links">
+          <ul>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-social">
+          <ul>
+            <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+            <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+            <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Sound Commerce. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
