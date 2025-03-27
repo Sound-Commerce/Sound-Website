@@ -26,16 +26,20 @@ a {
   color: #fff;
 }
 
+p {
+  line-height: 1.75rem;
+}
+
 .animated-gradient {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(45deg, #2ad775, #34c576, #5affa2);
+  background: linear-gradient(45deg, #2ad775, #03f36f, #afffd2);
   background-size: 300% 300%;
   animation: gradientAnimation 10s ease infinite;
 }
 
 .body-solid-background {
-  background-color: #011009;
+  background-color: #000704;
   margin: 20px 20px 0 20px;
   border-radius: 10px 10px 0 0;
 }
@@ -100,24 +104,25 @@ header {
   padding: 0;
   margin: 0;
   display: flex;
+  align-items: center;
 }
 
 .header-nav li {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
-.header-nav a {
+.header-nav-link {
   transition: color 0.3s;
   font-size: 14px;
   color: #5affa2;
 }
 
-.header-nav a:hover {
+.header-nav-link:hover {
   color: #ffffff;
 }
 
 .hero {
-  height: 80vh;
+  min-height: 80vh;
   display: flex;
   gap: 30px;
   align-items: center;
@@ -143,7 +148,7 @@ header {
   display: inline-block;
   padding: 12px 20px;
   background-color: #011009; /* Primary color */
-  color: #2ad775;
+  color: #fff;
   border: 1px solid #2ad775;
   font-size: 16px;
   font-weight: bold;
@@ -156,6 +161,121 @@ header {
 .book-button:hover {
   background-color: #2ad775; /* Primary color */
   color: #011009;
+}
+
+.book-button-cta {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: none; /* Primary color */
+  border: 1px solid #2ad775;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.book-button-cta:hover {
+  background-color: #2ad775; /* Primary color */
+}
+
+/* SERVICES SECTION */
+.services-section {
+  padding: 30px 20px;
+}
+
+.services-page-section {
+  padding: 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.service-page-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  color: #011009;
+  background-color: #03f36f;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: 1px solid #2ad775;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.service-card p {
+  color: #adadad;
+}
+
+/* CLIENT LOGOS */
+.client-logos {
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.logos-wrapper {
+  margin: 50px auto 30px auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.logo-slide {
+  display: flex;
+  align-items: center;
+}
+
+.logo-slide img {
+  width: 120px;
+  margin: 0 15px;
+}
+
+/* VALUE PROPOSITION */
+.value-section {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.value-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+}
+
+.value-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #011009;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.textCenter {
+  text-align: center;
 }
 
 .trackingTight {
@@ -194,15 +314,15 @@ header {
 
 /* FOOTER */
 footer {
+  background-color: #011009;
   color: #fff;
-  padding: 20px;
+  padding: 75px 30px 20px 30px;
   font-size: 14px;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding-bottom: 10px;
@@ -236,6 +356,7 @@ footer {
 }
 
 .footer-bottom {
+  margin-top: 50px;
   text-align: center;
   padding-top: 10px;
   font-size: 12px;
